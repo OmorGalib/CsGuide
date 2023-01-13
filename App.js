@@ -22,7 +22,6 @@ const firebaseConfig = {
 if (!firebase.length) {
   firebase.initializeApp(firebaseConfig);
 }
-const db = getFirestore(app);
 
 const HomeStack = createStackNavigator();
 const AuthStack = createStackNavigator();

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { View, Button, StyleSheet, Text } from "react-native";
 import { AuthContext } from "../providers/AuthProvider";
 import { useNavigation } from '@react-navigation/native';
-import ForumList from "../components/ForumList";
-import AddPost from "../components/AddPost";
 import { Card } from "@rneui/base";
 
 const HomeScreen = (props) => {
@@ -40,7 +38,7 @@ const HomeScreen = (props) => {
             <Text> </Text>
             <Button
               style={styles.button}
-              title="Add Post"
+              title="View Guidelines"
               onPress={() => {
                 setModalVisible(true);
               }}
